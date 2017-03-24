@@ -1,23 +1,130 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jarrod Fong-Lim - Web App Developer</title>
-        <meta name="description" content="Jarrod Fong-Lim is training to be a junior web developer">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to my Portfolio</title>
+  <meta name="description" content="Jarrod Fong-Lim is training to be a junior web developer">
+  <meta property="og:title" content="Portfolio of Melbourne junior web developer, Jarrod Fong-Lim">
+  <meta property="og:description" content="Jarrod Fong-Lim is training to be a junior web developer">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contactme">Contact Me</a>
+        <p class="nav_text">"Inspiration comes in many form."</p>
+      </div>
+    </nav>
+  </header>
+  <div class="section_one" id="about">
+    <h1 class="topic_one">About Me</h1>
+    <div class="image_one">
+      <img class="image1" src="/images/about_me.gif">
+      <p class="section_one_quote">"Sometimes it's best to take a leap of faith"</p>
+    </div>
+    <div class="about">
+      <p class="para_section_one">I was born and bred in Darwin, until my mid-teenage years, when I moved to Melbourne.</p>
 
-        <!--Used prodominately for social media ie FACEBOOK, not Twiiter has their own format.-->
-        <meta property="og:title" content="Portfolio of Melbourne junior web developer, Jarrod Fong-Lim">
-        <meta property="og:description" content="Jarrod Fong-Lim is training to be a junior web developer">
-        <!-- use og impage 1200 x 627 pixels, and no laerger than 5MB-->
-        <!--if use max size writing will be underneath-->
-        <!--If image is small, there will be a split screen-->
-        <meta property="og:image" content="">
+      <p class="para_section_one">I completed a couple of degrees at Victoria University specialising in Human Resources, Hospitality Management, and Enterprise Resource Planning Systems.</p>
+
+      <p class="para_section_one">Even though I have only worked professionally within the hospitality sector, and later within the ATO, I have found myself in a position where a complete change was needed.</p>
+
+      <p class="para_section_one">I had a vision in one of my dreams to create an app that would change the way business operates. This involved creating better communication and transparency between a customer and a business operator. I am a strong believer that things happens for a reason.</p>
+
+      <p class="para_section_one">This is where Coder Factory Academy comes into play. Currently, I am doing a six month bootcamp course in coding that will expose me to the necessary skills to become a full stack web developer.</p>
+    </div>
+
+  </div>
+  <div class="section_two" id="experience">
+    <h1 class="topic_two">Experience</h1>
+    <div class="image_two">
+      <img class="image2" src="/images/experience.gif">
+      <p class="section_two_quote">"No matter where you come from, we all have a great story to tell."</p>
+    </div>
+    <div class="experience">
 
 
+      <p class="para_section_two">At present, I am getting a lot of practice with coding exercises and projects. This experience will become part of my coding portfolio.</p>
 
+      <p class="para_section_two">Prior to Coder Factory Academy, I developed a strong background in the customer service and hospitality sectors. I did a university placement within Intercontinental Hotels Group specialising in front office, sales, and reservations. I also have many years experience within in the fitness and call centre industries.</p>
 
-    </head>
+      <p class="para_section_two">I have 9 years experience doing karate, and of recent, have been mentoring lower grade students to improve their abilities.</p>
 
-    <body>
-      <p>Today is Thurs 16th March 2017</p>
-    </body>
+    </div>
+
+  </div>
+  <div class="section_three" id="skills">
+    <div class="skills">
+      <h1 class="topic_three">Skills</h1>
+      <div class="image_three">
+        <img class="image3" src="/images/skills.gif">
+        <p class="section_three_quote">"You can never have enough skills"</p>
+      </div>
+      <div class="material_icons">
+        <i class="devicon-html5-plain-wordmark colored"></i>
+        <i class="devicon-css3-plain-wordmark colored"></i>
+        <i class="devicon-ruby-plain-wordmark colored"></i>
+        <i class="devicon-nodejs-plain-wordmark"></i>
+        <i class="devicon-bootstrap-plain-wordmark"></i>
+        <i class="devicon-rails-plain-wordmark colored"></i>
+        <i class="devicon-react-original-wordmark colored"></i>
+      </div>
+    </div>
+  </div>
+  <div class="section_four" id="projects">
+    <div class="projects">
+      <h1 class="topic_four">Projects</h1>
+      <div class="image_four">
+        <img class="image4" src="/images/project.gif">
+        <p class="section_four_quote">"Team work is gold! Work in synergy and advance forward."</p>
+      </div>
+      <h3>Paying bills app.</h3>
+      <img class="app_image" src="/images/screenshot2.gif">
+      <p class="click_me"><a href="https://github.com/jarrodfonglim" target="_blank">Click here to view the code</a><p>
+      <p class="topic4">My first project was written using Ruby. This app allows the user to input all bills. Each bill is tabulated in order of priority to be paid.</p>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="section_five" id="contactme">
+      <div class="contactme">
+        <h1 class="topic_five">Contact Me</h1>
+        <div class="image_five">
+
+        </div> <!-- contactme -->
+
+        <form method="POST" action="http://formspree.io/jarrodfonglim@outlook.com">
+          <label for="fname">First Name</label>
+          <br>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+          <br>
+
+          <label for="lname">Last Name</label>
+          <br>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <br>
+          <label for="email">Email</label>
+          <br>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <br>
+          <label for="email">Subject Line</label>
+          <br>
+          <input type="text" id="email" name="email" placeholder="Your email address..">
+          <br>
+          <label for="message">Message</label>
+          <br>
+          <textarea placeholder="Please enter your query, comment or feedback here"></textarea>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

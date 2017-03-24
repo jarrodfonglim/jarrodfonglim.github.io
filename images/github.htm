@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0018)http://devicon.fr/ -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>DEVICON | All programming languages and development tools related icons font</title>
+  <meta name="description" content="devicon aims to gather all logos representing development languages and tools in one font.">
+  <!-- <meta name="viewport" content="width=device-width"> -->
+  <link rel="icon" type="image/png" href="http://devicon.fr/favicon.png" sizes="196x196">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="http://devicon.fr/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://devicon.fr/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://devicon.fr/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://devicon.fr/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://devicon.fr/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://devicon.fr/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://devicon.fr/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://devicon.fr/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://devicon.fr/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://devicon.fr/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://devicon.fr/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://devicon.fr/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://devicon.fr/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://devicon.fr/manifest.json">
+  <link rel="mask-icon" href="http://devicon.fr/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="./github_files/devicon.min.css">
+  <link rel="stylesheet" href="./github_files/style.css">
+</head>
+
+<body ng-app="devicon" ng-controller="IconListCtrl" class="ng-scope">
+  <!--[if lt IE 7]>
+  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="borders"></div>
+
+  <div class="container">
+    <header class="clearfix">
+      <h1>Devicon <span>2.0</span></h1>
+      <h2>Devicon is a set of icons representing programming languages, designing &amp; development tools. You can use it as a font or directly copy/paste the svg code into your project.</h2>
+      <h3>(Super) Quick Setup</h3>
+      <h5>First select an icon on the right, then select the version below and copy/paste the code into your project.</h5>
+      <ul>
+        <li>
+          <h4>Font versions</h4>
+          <ul class="icons-list">
+            <!-- ngRepeat: fontVersion in selectedIcon.font --><div ng-repeat="fontVersion in selectedIcon.font" class="ng-scope">
+              <li ng-click="selectFont(fontVersion, false, $index)" ng-class="{&#39;selected-version&#39; : ($index == selectedFontIndex &amp;&amp; !colored)}" class="">
+                <i class="devicon-github-plain"></i>
+              </li>
+              <li ng-click="selectFont(fontVersion, true, $index)" ng-class="{&#39;selected-version&#39; : ($index == selectedFontIndex &amp;&amp; colored)}" class="selected-version">
+                <i class="devicon-github-plain colored"></i>
+              </li>
+            </div><!-- end ngRepeat: fontVersion in selectedIcon.font --><div ng-repeat="fontVersion in selectedIcon.font" class="ng-scope">
+              <li ng-click="selectFont(fontVersion, false, $index)" ng-class="{&#39;selected-version&#39; : ($index == selectedFontIndex &amp;&amp; !colored)}">
+                <i class="devicon-github-plain-wordmark"></i>
+              </li>
+              <li ng-click="selectFont(fontVersion, true, $index)" ng-class="{&#39;selected-version&#39; : ($index == selectedFontIndex &amp;&amp; colored)}">
+                <i class="colored devicon-github-plain-wordmark"></i>
+              </li>
+            </div><!-- end ngRepeat: fontVersion in selectedIcon.font -->
+          </ul>
+          <div class="cde ng-binding">
+            <div class="cde-com">&lt;!-- in your header --&gt;</div>
+            &lt;link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css"&gt;<br>
+            <br>
+            <div class="cde-com">&lt;!-- in your body --&gt;</div>
+            &lt;i class="devicon-github-plain<!-- ngIf: colored --><span ng-if="colored" class="ng-scope"> colored</span><!-- end ngIf: colored -->"&gt;&lt;/i&gt;<br>
+          </div>
+        </li>
+        <li>
+          <h4>SVG versions</h4>
+          <ul class="icons-list">
+            <!-- ngRepeat: svgVersion in selectedIcon.svg --><li ng-repeat="svgVersion in selectedIcon.svg" ng-click="selectSvg(svgVersion, $index)" ng-class="{&#39;selected-version&#39; : $index == selectedSvgIndex}" class="ng-scope selected-version">
+              <img ng-src="devicon.git/icons/github/github-original.svg" src="./github_files/github-original.svg">
+            </li><!-- end ngRepeat: svgVersion in selectedIcon.svg --><li ng-repeat="svgVersion in selectedIcon.svg" ng-click="selectSvg(svgVersion, $index)" ng-class="{&#39;selected-version&#39; : $index == selectedSvgIndex}" class="ng-scope">
+              <img ng-src="devicon.git/icons/github/github-original-wordmark.svg" src="./github_files/github-original-wordmark.svg">
+            </li><!-- end ngRepeat: svgVersion in selectedIcon.svg -->
+          </ul>
+          <div class="cde">
+          &lt;svg viewBox="0 0 128 128"&gt;<br>
+          <div class="cde-ind ng-binding">&lt;path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"&gt;&lt;/path&gt;&lt;path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"&gt;&lt;/path&gt;</div>
+          &lt;/svg&gt;
+          </div>
+        </li>
+      </ul>
+
+      <h3>Github Repo</h3>
+      <h5>If you prefer a local install, you can download all the files on the github repo.</h5>
+      <p class="download">
+        <a href="https://github.com/konpa/devicon/archive/master.zip"><i class="icon-github"></i>DOWNLOAD</a>
+      </p>
+      <p class="download">
+        <a href="https://github.com/konpa/devicon/" target="blank"><i class="icon-github"></i>GO TO REPO</a>
+      </p>
+      <p class="download">
+        <a href="https://github.com/konpa/devicon/blob/master/CONTRIBUTING.md" target="blank"><i class="icon-github"></i>CONTRIBUTE</a>
+      </p>
+
+      <p class="footer">
+        Made by <a href="https://github.com/konpa">Konpa</a> (under <a href="https://github.com/konpa/devicon/blob/master/LICENSE">MIT License</a>)<br>
+        Copyright © 2015 <a href="https://github.com/konpa">Konpa</a><br>
+        <br>
+        Final font build with <a href="https://icomoon.io/">Icomoon app</a><br>
+        <br>
+        <i>All product names, logos, and brandsare property of their respective owners.  All company, product and service names used in this website are for identification purposes only.  Use of these names, logos, and brands does not imply endorsement.</i>
+      </p>
+    </header>
+
+    <div class="main">
+
+      <div class="search">
+        <input type="text" placeholder="Search for icons" ng-model="search" class="ng-valid ng-dirty">
+      </div>
+
+      <ul class="cbp-ig-grid">
+        <!-- ngRepeat: icon in icons | filter:search --><li ng-repeat="icon in icons | filter:search" class="ng-scope">
+          <span ng-class="{&#39;selected&#39;: icon.selected}" ng-click="selectIcon(icon)">
+            <i class="cbp-ig-icon devicon-github-plain"></i>
+            <h3 class="cbp-ig-title ng-binding">github</h3>
+          </span>
+        </li><!-- end ngRepeat: icon in icons | filter:search -->
+      </ul>
+    </div>
+  </div>
+
+  <script async="" src="./github_files/analytics.js"></script><script src="./github_files/angular.min.js"></script>
+  <script src="./github_files/angular-sanitize.min.js"></script>
+  <script src="./github_files/angular-animate.min.js"></script>
+  <script src="./github_files/script.js"></script>
+
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-45588276-4', 'devicon.fr');
+    ga('send', 'pageview');
+  </script>
+
+
+
+<span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">Save</span></body></html>
