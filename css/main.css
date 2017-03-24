@@ -176,6 +176,11 @@ form #email {
   height: 50px;
 }
 
+form #sline {
+  width: 200%;
+  height: 50px;
+}
+
 form input {
 	font-size: 24px;
 }
